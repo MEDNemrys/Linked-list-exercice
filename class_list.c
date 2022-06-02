@@ -324,11 +324,10 @@ int main(){
 		printf("\t\t||\t4. Ordered List \t\t\t ||\n");
 		printf("\t\t||\t5. Insert before 1st element\t\t ||\n");
 		printf("\t\t||\t6. Insert after 1st element\t\t ||\n");
-		printf("\t\t||\t7. Insert with position    \t\t ||\n");
-		printf("\t\t||\t8. Insert before element specified\t ||\n");
-		printf("\t\t||\t9. Insert after element specified\t ||\n");
-		printf("\t\t||\t10. Delete element \t\t\t ||\n");
-		printf("\t\t||\t6. Exit\t\t\t\t\t ||\n");
+		printf("\t\t||\t7. Insert before element specified\t ||\n");
+		printf("\t\t||\t8. Insert after element specified\t ||\n");
+		printf("\t\t||\t9. Delete element \t\t\t ||\n");
+		printf("\t\t||\t10. Exit\t\t\t\t\t ||\n");
 		printf("\t\t--------------------------------------------------\n");
 		printf("Enter choice: ");
 		scanf("%d",&menu);
@@ -360,15 +359,15 @@ int main(){
      					scanf("%d\n",&p);
      					lis_ap_ele(p+1);
      		case 9 : printf("which position?");
-					s	canf("%d",&l);
+					scanf("%d",&l);
 					supp_elem(l);
 					break;
-			case 10 : inse_croi();
-						break;
+			case 10 : menu=10;
+					break;
 			default : printf("invalid number!!");
 						break;
      					
-		}}while(menu!=6);     
+		}}while(menu!=10);     
 	 
 }	
 	
